@@ -20,12 +20,12 @@ switch (true){
     alert("Tu IMC es " + calcula_imc + " esto es superior al normal, se recomienda hacer ejercicio");
     break;
   case (calcula_imc)>30:
-    alert("Tu IMC es " + calcula_imc + " Tienes obecidad, por favor consuta a tu medico familiar");
+    alert("Tu IMC es " + calcula_imc + " Tienes obesidad, por favor consuta a tu medico familiar");
     break;
   default:
     alert("Por favor ingresa un dato valido");
     break;
-} */
+}  */
 
 /* 2. Usando como referencia los siguientes datos de estaturas promedio:
             General Varón   Mujer
@@ -136,7 +136,7 @@ switch (true) {
   case pais_residencia != "MX" || pais_residencia != "AU" || pais_residencia != "CA" || pais_residencia != "BR" || pais_residencia != "RU":
     alert("El pais seleccionado no exite, intentalo nuevamente")
     break;
-} */
+}  */
 
 /* 3. Tomando como referencia los siguientes datos de densidades:
 Sustancia       Densidad (kg/m3)
@@ -146,8 +146,8 @@ Oro             19300
 Plata           10490
 Diamante        3515
 crear un script que me permita conocer el peso de un cubo de cualquier material (pedir al usuario la dimensión del lado del cubo y el material a consultar). Si el material no se encuentra en la lista, informar que no se cuentan con datos sobre la densidad de dicho material. */
-/* 
-alert ("Vamos a calcular la densidad de un cubo según el material con el que esta echo")
+ 
+/* alert ("Vamos a calcular la densidad de un cubo según el material con el que esta echo")
 var medida = prompt("Ingresa el valor de la medida de un lado del cubo")
 var material = prompt("Ingresa el material del cuál esta echo el cubo, ingresa A para acero, C para cobre, O para oro, P para plata, D para diamante")
 var volumen = (medida ** 3)
@@ -171,5 +171,120 @@ switch (true) {
   case material != "A" || material != "C" || material != "O" || material != "P" || material != "D":
     alert("El material no existe, intenta nuevamente")
     break;
+} */
+ 
+
+
+/*
+    var phrase = "La mejor forma de predecir el futuro es creándolo"
+    1- saber la cantidad de palabras
+    2- saber la cantidad de "a"
+    3- crear una nueva frase usando sólo los caracteres que esten en posiciones nones
+        "amjrf"
+    4- crear una nueva frase usando sólo los caracteres que esten en posiciones pares
+*/
+
+
+/* var phrase = "La mejor forma de predecir el futuro es creándolo" */
+
+/* 1- saber la cantidad de palabras */
+
+/* for ( var i = 0; i < phrase.length; i++ ) {
+  var character = phrase.charAt(i)
+  if ( character === " " ) {
+    spaces = spaces + 1
+  }
+  var words = spaces + 1
+}  
+console.log('La cantidad de palabras es : ' + words ) */
+
+/* 2- saber la cantidad de "a" */
+
+/* 
+var phrase = "La mejor forma de predecir el futuro es creándolo"
+var letra_a = 0
+
+for ( var i = 0; i < phrase.length; i++ ) {
+  var character = phrase.charAt(i)
+  if (  character == "a" || character == "á" || character == "A" || character == "Á" ) {
+    letra_a = letra_a + 1
+  }
+}  
+console.log('La cantidad de letras a son : ' + letra_a ) */
+
+/* 3- crear una nueva frase usando sólo los caracteres que esten en posiciones nones */
+/* 4- crear una nueva frase usando sólo los caracteres que esten en posiciones pares */
+
+/* var phrase = "La mejor forma de predecir el futuro es creándolo"
+var par = 0
+var none = 0
+for (var i = 0; i < phrase.length; i++) {
+  if ( i % 2 == 0) {
+    par += phrase.charAt(i)
+  } else {
+    none += phrase.charAt(i)
+  }
 }
- */
+console.log(par);
+console.log(none); */
+
+/*
+    Usando la frase "La mejor forma de predecir el futuro es creándolo" lograr los siguientes resultados:
+    1.- Mostrar la misma frase en snake_case
+    2.- Mostrar la misma frase en kebab-case
+    3.- Mostrar la misma frase con todas las vocales en mayúscula
+    4.- Mostrar los primeros 10 caracteres de la frase
+    5.- Mostrar los últimos 10 caracteres de la frase 
+*/
+
+/* 1.- Mostrar la misma frase en snake_case */
+/* var phrase = "La mejor forma de predecir el futuro es creándolo"
+var new_phrase = ""
+var character = ""
+
+for (var i = 0; i < phrase.length; i++) {
+  var character = phrase.charAt(i)
+  if ( character === " " ) {
+    phrase = phrase.replace(phrase.charAt(i),"_")
+  }
+}
+console.log(phrase); */
+
+/* var phrase = "La mejor forma de predecir el futuro es creándolo"
+var new_phrase = ""
+var character = ""
+
+for (var i = 0; i < phrase.length; i++) {
+  var character = phrase.charAt(i)
+  if ( character === " " ) {
+    phrase = phrase.replace(phrase.charAt(i),"-")
+  }
+}
+console.log(phrase); */
+
+/* 3.- Mostrar la misma frase con todas las vocales en mayúscula */
+
+/* var phrase = "La mejor forma de predecir el futuro es creándolo"
+var character = ""
+
+for (var i = 0; i < phrase.length; i++) {
+  var character = phrase.charAt(i)
+  if ( character === "a"|| character === "e"|| character === "i"|| character === "o"|| character === "u"|| character === "á"|| character === "é"|| character === "í"|| character === "ó"|| character === "ú") {
+    phrase = phrase.replace(phrase.charAt(i),(character.toUpperCase()))
+  }
+}
+console.log(phrase); */
+
+/* 4.- Mostrar los primeros 10 caracteres de la frase */
+
+/* var phrase = "La mejor forma de predecir el futuro es creándolo"
+var new_phrase = phrase.slice(0,10)
+
+console.log(new_phrase); */
+
+/* 5.- Mostrar los últimos 10 caracteres de la frase  */
+
+/* var phrase = "La mejor forma de predecir el futuro es creándolo"
+var new_phrase = phrase.slice(phrase.length-10, phrase.length-0)
+
+console.log(new_phrase); */
