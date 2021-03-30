@@ -1,4 +1,5 @@
-var num_koders = parseInt(prompt("Ingresa el número de koders"))
+var num_koders = parseInt(prompt("Ingresa el número de koders"));
+alert(Math.random(1,3))
 var koder = []
 
 function add_koders () {
@@ -45,3 +46,4 @@ alert(koder)
     permitir guardar koders adicionales
     permitir borrar un koder aleatorio de la lista
 */
+
