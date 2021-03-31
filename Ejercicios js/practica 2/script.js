@@ -288,3 +288,12 @@ console.log(new_phrase); */
 var new_phrase = phrase.slice(phrase.length-10, phrase.length-0)
 
 console.log(new_phrase); */
+
+
+
+
+
+
+const suma_dos_numeros = (a,b) => a + b
+
+console.log(suma_dos_numeros(1,2));
