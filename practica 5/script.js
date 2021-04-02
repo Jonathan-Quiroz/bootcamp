@@ -29,7 +29,6 @@ function item (nombre, descripcion, precio_de_costo, clasificacion, porcentaje_d
     }
 }
 
-
 const limon = new item (`limon`, `Articulo comestible`, 5, `verduras`, 0.5, [4,5,3,6,5,3], 100, `2021/04/10`)
 const tomate = new item (`tomate`, `Articulo comestible`, 13, `verduras`, 0.5, [14,15,13,16,15,13], 150, `2021/04/15`)
 const coco = new item (`coco`, `Articulo comestible`, 26, `fruta`, 0.5, [24,25,23,26,25,23], 50, `2021/04/8`)
@@ -59,3 +58,6 @@ console.log(menos_de_10);
 const caduca_en_15 = items_en_tienda.filter(element => element.caducidad()<15)
 console.log(caduca_en_15);
 console.log(limon.caducidad());
+
+
+
