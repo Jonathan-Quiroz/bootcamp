@@ -56,3 +56,12 @@ console.log(borra_elementos);
 let array_dos = array.slice();
 console.log(array_dos);
 
+//Acceso a elementos de un array 
+
+//Primer elemento
+console.log(array2[0]);
+//Ultimo elementos
+console.log(array2);
+console.log(array2.length-1);
+console.log((array2[6]));
+
