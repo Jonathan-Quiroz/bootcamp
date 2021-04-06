@@ -8,7 +8,7 @@ mi_cadena.length;
 console.log(mi_cadena.length); */
 
 
-//1.- Dado un string de dos palabras realizar una función que devuelva la palabra más larga
+//------>1.- Dado un string de dos palabras realizar una función que devuelva la palabra más larga
 
   // hacer una funcion que realice lo siguiente:
 
@@ -41,7 +41,9 @@ finisInDots(prompt("Ingresar una frase favorita")) */
 
 
 
-//3.- Crear un programa que permita al usuario retornar el numero de coincidencias de una palabra en una frase que el mismo usuario ingrese.
+//------>3.- Crear un programa que permita al usuario retornar el numero de coincidencias de una palabra en una frase que el mismo usuario ingrese.
+
+  // hacer una funcion que realice lo siguiente:
 
   // a.- Leer una frase y guardardarla en algun lugar 
   // b.- Preguntar al usuario que palabra desea buscar en la frase que escribio
@@ -66,15 +68,25 @@ findWord(prompt("Ingresa tu frase favorita"), prompt("Que palabra deseas validar
 
 // ------> 4.- Crear un programa que permita al usuario extraer una subacadena de una frase dada.
 
-/* let frase = prompt("Escribe una frase")
-let busca_palabra = prompt("Que palabar deseas buscar en la frase anterior")
-let muestra_palabra = ""
-  if (muestra_palabra = frase.includes(busca_palabra)) {
-      alert("palabra " + busca_palabra + " encontrada")
-  } else {
-      alert("palabra NO encontrada, " )
-  }
- */
+  // hacer una funcion que realice lo siguiente:
+  // a.- Leer una cadena y guardarla
+  // b.- recibir una lapabra para buscarla en la cadena anterior
+  // c.- mostrar la palabra que se encontro en la cadena, en caso contrario avisar que no hay conicidencia
+
+/* function findWordInString(phrase, word) {
+  let savePhrase = phrase.split(" ")
+  let findWord = word
+  let showmeWord = ""
+  if (showmeWord = phrase.includes(findWord)) {
+    console.log("palabra " + findWord + " encontrada")
+} else {
+    console.log("palabra NO encontrada," )
+}
+}
+
+findWordInString("hola mundo", "mundo") */
+
+
 
 //-------> 5.- crear un programa que permita comparar dos palabaras dadas por el usuario y determinar si son iguales.
 
@@ -88,24 +100,19 @@ if (palabra_uno === palabra_dos) {
 } 
  */
 
-//--------> 7.- Realizar un programa que permita a una cadena de texto convertirlo a Mayusculas.
+//--------> 6.- Realizar un programa que permita a una cadena de texto convertirlo a Mayusculas.
 
 /* let cadena_minuscula = prompt("Inresa una palabra");
 let cadena_mayuscula = alert(cadena_minuscula.toUpperCase()) */
 
-//--------> 8.- Crear un programa que permita a una cadena de texto mostrar el sogno '-' entre cada caracter
+//--------> 7.- Crear un programa que permita a una cadena de texto mostrar el sogno '-' entre cada caracter
 
 /* let  frase = prompt("Ingresa una frase");
 alert(frase.replace(/\s/g, '').split('').join('-')) */
 
-// 9.- Crear un programa que devuelva la cantidad de vocales que tenga una frase dada por el usuario.
-
-
-/* function valida_(params) {
-  
-}
+// 8.- Crear un programa que devuelva la cantidad de vocales que tenga una frase dada por el usuario.
 
 var cadena = "aAeEiIoOuU son vocales";
 var numeroVocales = cadena.match(/[aeiou]/gi).length;
 
-console.log(numeroVocales); */
+console.log(numeroVocales);
